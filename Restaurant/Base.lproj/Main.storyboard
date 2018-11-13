@@ -77,7 +77,7 @@
         <!--Меню-->
         <scene sceneID="aMC-Jh-jy3">
             <objects>
-                <tableViewController id="bxv-HT-yQL" sceneMemberID="viewController">
+                <tableViewController id="bxv-HT-yQL" customClass="CategoryTableViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xEa-o3-gw8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="xl1-Sv-naM" kind="show" id="Ky7-5d-csS"/>
+                                    <segue destination="TqC-Zf-Ivk" kind="show" id="aYw-Mx-fPW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -106,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="630" y="-7"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu Table View Controller-->
         <scene sceneID="5L5-2V-PSN">
             <objects>
-                <tableViewController id="TqC-Zf-Ivk" sceneMemberID="viewController">
+                <tableViewController id="TqC-Zf-Ivk" customClass="MenuTableViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZDD-aA-Fg7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,6 +122,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="xl1-Sv-naM" kind="show" id="I4w-ct-s3I"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -134,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="1665" y="-7"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu Item Detail View Controller-->
         <scene sceneID="G4N-Ct-lzM">
             <objects>
-                <viewController id="xl1-Sv-naM" sceneMemberID="viewController">
+                <viewController id="xl1-Sv-naM" customClass="MenuItemDetailViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mgx-GL-SeE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
